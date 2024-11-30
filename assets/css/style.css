@@ -115,6 +115,9 @@ ion-icon { display: block; }
 h1{
   width: 74;
   height: 24;
+  color:white;
+  font-size:bold;
+  font-weight: 400;
 }
 
 a {
