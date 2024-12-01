@@ -3,7 +3,7 @@
 \*-----------------------------------*/
 
 /**
- * copyright 2022 codewithsadee
+ * 
  */
 
 
@@ -125,7 +125,9 @@ a {
   text-decoration: none;
 }
 
-img { height: auto; }
+img { height: auto;
+  border-radius: 3%;
+ }
 
 input,
 button {
@@ -246,6 +248,7 @@ body.nav-active { overflow: hidden; }
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 1%;
 }
 
 .section-subtitle {
