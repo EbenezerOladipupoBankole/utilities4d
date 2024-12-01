@@ -12,7 +12,7 @@ Project Directory
     ├── css/        # Stylesheets  
     ├── js/         # JavaScript files  
     ├── images/     # Images used on the website  
-    ├── fonts/      # Custom fonts (if applicable)  
+    ├── fonts/      # Custom fonts 
 Instructions for Setup
 Extract the contents of the zip file to a directory of your choice.
 Open index.html in any modern web browser to view the website.
