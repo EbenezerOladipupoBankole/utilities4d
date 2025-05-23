@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Utilities 4 Dragon - Upcoming Features & Roadmap</title>
+    <meta
+      name="description"
+      content="Enhance your Dragon speech recognition experience with our powerful utilities. Tools for dictation, speech command, and hands-free computing. Free trial available."
+    />
+    <meta
+      name="keywords"
+      content="dragon naturallyspeaking, speech recognition, utilities, accessibility, dictation, speech command, hands-free computing, productivity, efficiency"
+    />
+
+    <!-- Open Graph & Twitter meta tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://utilities4d.com/" />
+    <meta
+      property="og:title"
+      content="Utilities 4 Dragon - Speech Recognition Utilities and Tools"
+    />
+    <meta
+      property="og:description"
+      content="Enhance your Dragon speech recognition experience with our powerful utilities. Tools for dictation, speech command, and hands-free computing. Free trial available."
+    />
+    <meta
+      property="og:image"
+      content="https://utilities4d.com/assets/images/logo.webp"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://utilities4d.com/" />
+    <meta
+      name="twitter:title"
+      content="Utilities 4 Dragon - Speech Recognition Utilities and Tools"
+    />
+    <meta
+      name="twitter:description"
+      content="Enhance your Dragon speech recognition experience with our powerful utilities. Tools for dictation, speech command, and hands-free computing. Free trial available."
+    />
+    <meta
+      name="twitter:image"
+      content="https://utilities4d.com/assets/images/logo.webp"
+    />
+
+    <link rel="icon" href="assets/images/favicon.jpg" type="image/jpg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+
+    <style>
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .animate-fade-in-up {
+        animation: fadeInUp 0.6s ease forwards;
+      }
+      .animate-fade-in-up.delay-150 {
+        animation-delay: 0.15s;
+      }
+      .animate-fade-in-up.delay-300 {
+        animation-delay: 0.3s;
+      }
+
+      @keyframes pulseSlow {
+        0%,
+        100% {
+          opacity: 0.1;
+        }
+        50% {
+          opacity: 0.15;
+        }
+      }
+      .animate-pulse-slow {
+        animation: pulseSlow 6s ease-in-out infinite;
+      }
+    </style>
+  </head>
+  <body class="font-sans text-gray-900 bg-white scroll-smooth">
+    <!-- Header -->
+    <header
+      class="fixed top-0 left-0 w-full bg-gray-900 text-white z-50 shadow-md"
+    >
+      <div
+        class="container mx-auto px-4 py-4 flex items-center justify-between"
+      >
+        <a
+          href="../index.html"
+          class="w-50"
+          aria-label="Utilities 4 Dragon Homepage"
+          ><img
+            src="../assets/images/logo.webp"
+            alt="Utilities 4 Dragon logo"
+            class="logo-image"
+        /></a>
+        <nav
+          class="hidden md:flex space-x-6"
+          role="navigation"
+          aria-label="Primary navigation"
+        >
+          <a
+            href="../index.html#home"
+            class="hover:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded"
+            >Home</a
+          >
+          <a
+            href="../index.html#services"
+            class="hover:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded"
+            >Services</a
+          >
+          <a
+            href="../index.html#about"
+            class="hover:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded"
+            >About</a
+          >
+          <a
+            href="../index.html#products"
+            class="hover:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded"
+            >Products</a
+          >
+          <a
+            href="../index.html#videos"
+            class="hover:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded"
+            >Videos</a
+          >
+          <a
+            href="../index.html#installations"
+            class="hover:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded"
+            >Installation</a
+          >
+          <a
+            href="../index.html#contact"
+            class="hover:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded"
+            >Contact</a
+          >
+        </nav>
+        <a
+          href="../buy/index.html"
+          class="hidden md:inline-block bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+          >Buy Now</a
+        >
+        <button
+          id="menu-toggle"
+          class="md:hidden text-3xl focus:outline-none focus:ring-2 focus:ring-blue-500"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
+      </div>
+      <nav
+        id="mobile-menu"
+        class="hidden md:hidden bg-gray-900 text-white absolute top-full left-0 w-full shadow-lg"
+        aria-label="Mobile navigation"
+      >
+        <ul class="flex flex-col space-y-4 p-6">
+          <li>
+            <a
+              href="../index.html#home"
+              class="hover:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded block"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="../index.html#services"
+              class="hover:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded block"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a
+              href="../index.html#about"
+              class="hover:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded block"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="../index.html#products"
+              class="hover:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded block"
+              >Products</a
+            >
+          </li>
+          <li>
+            <a
+              href="../index.html#videos"
+              class="hover:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded block"
+              >Videos</a
+            >
+          </li>
+          <li>
+            <a
+              href="../index.html#installations"
+              class="hover:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded block"
+              >Installation</a
+            >
+          </li>
+          <li>
+            <a
+              href="../index.html#contact"
+              class="hover:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded block"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a
+              href="../buy/index.html"
+              class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 text-center block focus:outline-none focus:ring-2 focus:ring-blue-500"
+              >Buy Now</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="pt-28 pb-16">
+      <section class="fade-in max-w-4xl mx-auto px-6">
+        <h1 class="text-4xl font-bold mb-6 text-gray-900">
+          Upcoming Features & Roadmap
+        </h1>
+        <p class="text-gray-700 mb-8">Published on May 22, 2025</p>
+        <div class="prose prose-lg text-gray-700 mb-12">
+          <p>
+            At Utilities 4 Dragon, we’re committed to evolving our tools to meet
+            your needs. This roadmap outlines upcoming features for
+            <a
+              href="../index.html#purchases"
+              class="text-blue-600 hover:underline"
+              >Dictation Box</a
+            >,
+            <a
+              href="../index.html#purchases"
+              class="text-blue-600 hover:underline"
+              >Speech Commander</a
+            >,
+            <a
+              href="../index.html#purchases"
+              class="text-blue-600 hover:underline"
+              >Glide</a
+            >,
+            <a
+              href="../index.html#purchases"
+              class="text-blue-600 hover:underline"
+              >Grid</a
+            >,
+            <a
+              href="../index.html#purchases"
+              class="text-blue-600 hover:underline"
+              >Calculator</a
+            >, and
+            <a
+              href="../index.html#purchases"
+              class="text-blue-600 hover:underline"
+              >Plates</a
+            >, along with ways you can shape our development.
+          </p>
+          <h2 class="text-2xl font-semibold mt-8 mb-4">Planned Features</h2>
+          <p>
+            We’re working on exciting enhancements to improve productivity and
+            accessibility:
+          </p>
+          <ul class="list-disc pl-6 mb-6">
+            <li>
+              <strong>Dictation Box</strong>: Enhanced Grammarly integration for
+              real-time grammar suggestions and real-time transcription for live
+              captioning.
+            </li>
+            <li>
+              <strong>Speech Commander</strong>: AI-driven command suggestions
+              based on your workflow, plus cross-platform support (macOS,
+              Linux).
+            </li>
+            <li>
+              <strong>Glide</strong>: Gesture-based scrolling for touch devices
+              and multi-monitor optimization.
+            </li>
+            <li>
+              <strong>Grid</strong>: Dynamic grid resizing for variable screen
+              sizes and touch-screen support.
+            </li>
+            <li>
+              <strong>Calculator</strong>: Graphing capabilities for visualizing
+              equations and unit conversion commands (e.g., “Convert 5 miles to
+              kilometers”).
+            </li>
+            <li>
+              <strong>Plates</strong>: Cloud-based template syncing for access
+              across devices and team collaboration features.
+            </li>
+          </ul>
+          <h2 class="text-2xl font-semibold mt-8 mb-4">Release Timeline</h2>
+          <p>Here’s our tentative schedule, subject to user feedback:</p>
+          <ul class="list-disc pl-6 mb-6">
+            <li>
+              <strong>Q3 2025</strong>: Beta testing for AI command suggestions
+              in Speech Commander.
+            </li>
+            <li>
+              <strong>Q4 2025</strong>: Full release of cloud-based template
+              syncing for Plates.
+            </li>
+            <li>
+              <strong>2026</strong>: Cross-platform support for macOS and Linux,
+              plus touch-screen enhancements for Grid and Glide.
+            </li>
+          </ul>
+          <h2 class="text-2xl font-semibold mt-8 mb-4">Get Involved</h2>
+          <p>Your feedback drives our development. Here’s how to contribute:</p>
+          <ul class="list-disc pl-6 mb-6">
+            <li>
+              <strong>Submit Feedback</strong>: Use the
+              <a
+                href="../index.html#contact"
+                class="text-blue-600 hover:underline"
+                >contact form</a
+              >
+              or email
+              <a
+                href="mailto:support@utilities4dragon.com"
+                class="text-blue-600 hover:underline"
+                >support@utilities4dragon.com</a
+              >
+              with feature requests.
+            </li>
+            <li>
+              <strong>Join Beta Testing</strong>: Sign up for our beta program
+              (link available in Q3 2025) to test new features early.
+            </li>
+            <li>
+              <strong>Share Ideas</strong>: Suggest integrations or workflows
+              that would enhance your experience.
+            </li>
+          </ul>
+          <h2 class="text-2xl font-semibold mt-8 mb-4">Why It Matters</h2>
+          <p>
+            These updates aim to make your workflows faster, more intuitive, and
+            accessible across devices. For example, cloud syncing in Plates will
+            let you access templates from any workstation, while AI suggestions
+            in Speech Commander will streamline command creation. We’re excited
+            to build tools that empower you.
+          </p>
+          <h2 class="text-2xl font-semibold mt-8 mb-4">Stay Updated</h2>
+          <p>
+            Follow our blog for the latest news and join our beta program to
+            shape the future of Utilities 4 Dragon. Check out our current tools
+            with a 30-day free trial to see what’s possible today.
+          </p>
+          <div class="flex justify-center mt-6">
+            <a
+              href="../index.html#purchases"
+              class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition font-semibold focus:outline-none focus:ring-2 focus:ring-blue-500"
+              >Explore Now</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-400 py-12 mt-24 select-none">
+      <div class="container mx-auto px-6 grid md:grid-cols-4 gap-10">
+        <div>
+          <h3 class="text-white font-bold text-xl mb-4">Utilities 4 Dragon</h3>
+          <p class="text-gray-400 max-w-xs">
+            Tools designed to empower and streamline your Dragon speech
+            recognition experience.
+          </p>
+          <p class="text-gray-400 mt-4">Pennsylvania, United States</p>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-3">Quick Links</h4>
+          <ul class="space-y-2">
+            <li>
+              <a href="../index.html#features" class="hover:text-blue-400"
+                >Features</a
+              >
+            </li>
+            <li>
+              <a href="../index.html#products" class="hover:text-blue-400"
+                >Products</a
+              >
+            </li>
+            <li>
+              <a href="../index.html#videos" class="hover:text-blue-400"
+                >Demo Videos</a
+              >
+            </li>
+            <li>
+              <a href="../index.html#installations" class="hover:text-blue-400"
+                >Installation</a
+              >
+            </li>
+            <li><a href="../blog/index.html" class="hover:text-blue-400">Blog/FAQ</a></li>
+            <li>
+              <a href="../index.html#contact" class="hover:text-blue-400"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-3">Learn More</h4>
+          <ul class="space-y-2">
+            <li><a href="../index#about" class="hover:text-blue-400">About Us</a></li>
+            <li>
+              <a href="../legal/index.html" class="hover:text-blue-400">Terms of Use</a>
+            </li>
+            <li>
+              <a href="../privacy/index.html" class="hover:text-blue-400">Privacy Policy</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-3">Follow Us</h4>
+          <div class="flex space-x-6">
+            <a
+              href="https://twitter.com/util4dragon"
+              aria-label="Twitter"
+              class="hover:text-blue-400"
+            >
+              <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                <path
+                  d="M23 3a10.9 10.9 0 01-3.14 1.53A4.48 4.48 0 0022.4 1.6a9.15 9.15 0 01-2.88 1.1A4.52 4.52 0 0016.67 0c-2.5 0-4.52 2.08-4.52 4.64 0 .37.04.73.12 1.08A12.8 12.8 0 013 1.15a4.45 4.45 0 00-.61 2.34c0 1.61.82 3.03 2.07 3.86A4.41 4.41 0 012.8 7.7v.06c0 2.26 1.58 4.14 3.68 4.56a4.48 4.48 0 01-2.04.07 4.52 4.52 0 004.21 3.17 9.04 9.04 0 01-5.58 1.91A8.65 8.65 0 010 19.63 12.7 12.7 0 006.92 21c8.31 0 12.85-7.1 12.85-13.25 0-.2 0-.39-.01-.58A9.54 9.54 0 0023 3z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://facebook.com/util4dragon"
+              aria-label="Facebook"
+              class="hover:text-blue-400"
+            >
+              <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                <path
+                  d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 5 3.66 9.12 8.44 9.88v-7H8v-3h2.44v-2.3c0-2.41 1.44-3.74 3.64-3.74 1.05 0 2.15.18 2.15.18v2.37h-1.21c-1.2 0-1.57.75-1.57 1.52v1.97H17l-.35 3h-2.65v7C18.34 21.12 22 17 22 12z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://linkedin.com/company/util4dragon"
+              aria-label="LinkedIn"
+              class="hover:text-blue-400"
+            >
+              <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                <path
+                  d="M4.98 3.5a2.5 2.5 0 100 5 2.5 2.5 0 000-5zM3 8.5h4v12H3v-12zm7 0h3.7v1.7h.1c.5-.9 1.7-1.8 3.5-1.8 3.7 0 4.4 2.4 4.4 5.5v6.6h-4v-5.9c0-1.4 0-3.2-2-3.2s-2.3 1.6-2.3 3.1v6h-4v-12z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-10 text-gray-500 text-sm select-none">
+        © 2025 Utilities 4 Dragon. All rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>

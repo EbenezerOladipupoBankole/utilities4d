@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subscription Status - Utilities 4 Dragon</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <style>
+    .status-container {
+      max-width: 600px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: var(--white);
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .status-message {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    
+    .status-icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    
+    .success .status-icon {
+      color: var(--success-color);
+    }
+    
+    .error .status-icon {
+      color: var(--error-color);
+    }
+    
+    .status-text {
+      color: var(--text-color);
+      font-size: 1.2rem;
+    }
+    
+    .back-button {
+      display: inline-block;
+      padding: 12px 24px;
+      background: var(--primary-color);
+      color: var(--white);
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background 0.3s ease;
+    }
+    
+    .back-button:hover {
+      background: var(--primary-dark);
+    }
+    
+    @media (max-width: 768px) {
+      .status-container {
+        margin: 1rem;
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="status-container">
+    <div class="status-message">
+      <?php
+      $success = isset($_GET['success']) && $_GET['success'] === 'true';
+      $error = isset($_GET['error']);
+      ?>
+      
+      <?php if ($success): ?>
+        <ion-icon name="checkmark-circle" class="status-icon"></ion-icon>
+        <h2 class="status-text">Thank You!</h2>
+        <p class="status-text">Your subscription has been successfully received.</p>
+        <p class="status-text">We'll keep you updated with the latest news and updates.</p>
+      <?php elseif ($error): ?>
+        <ion-icon name="alert-circle" class="status-icon"></ion-icon>
+        <h2 class="status-text">Subscription Error</h2>
+        <p class="status-text">
+          <?php
+          switch ($_GET['error']) {
+            case 'duplicate':
+              echo 'You are already subscribed to our newsletter.';
+              break;
+            case 'invalid':
+              echo 'Please enter a valid email address.';
+              break;
+            case 'server':
+              echo 'An error occurred while processing your request. Please try again later.';
+              break;
+            default:
+              echo 'Security verification failed. Please try again.';
+          }
+          ?>
+        </p>
+      <?php else: ?>
+        <ion-icon name="checkmark-circle" class="status-icon"></ion-icon>
+        <h2 class="status-text">Thank You!</h2>
+        <p class="status-text">Your subscription has been successfully received.</p>
+      <?php endif; ?>
+    </div>
+    <a href="index.html" class="back-button">Go Back to Home</a>
+  </div>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

@@ -380,10 +380,6 @@ body.nav-active { overflow: hidden; }
   opacity: 0.8;
 }
 
-
-
-
-
 /*-----------------------------------*\
   #HERO
 \*-----------------------------------*/
@@ -391,6 +387,15 @@ body.nav-active { overflow: hidden; }
 .hero {
   padding-block-start: calc(var(--section-padding) + 70px);
   text-align: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+              url('../images/hero-bg.webp') center/cover;
+  color: var(--white);
+  text-align: center;
+  padding: var(--spacing-4xl) 0;
 }
 
 .hero .container {
@@ -398,7 +403,13 @@ body.nav-active { overflow: hidden; }
   gap: 70px;
 }
 
-.hero-title { color: var(--white); }
+.hero-title { 
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 700;
+  margin-bottom: var(--spacing-xl);
+  line-height: 1.2;
+  color: var(--white);
+}
 
 .hero-text {
   font-size: var(--fs-5);
