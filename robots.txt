@@ -1,16 +1,70 @@
+# General rules for all crawlers
 User-agent: *
-Allow: /
-
-# Sitemap
+Disallow: /admin/              # Block admin directories
+Disallow: /assets/js/          # Block JavaScript files
+Disallow: /assets/css/         # Block CSS files
+Disallow: /assets/private/     # Block potential private asset directories (if applicable)
+Disallow: /backup/             # Block backup directories
+Disallow: /temp/               # Block temporary files
+Disallow: /cgi-bin/            # Block CGI scripts
+Disallow: /wp-admin/           # Block WordPress admin (if applicable, remove if not used)
+Disallow: /*.php$             # Block dynamic PHP files (if not needed for public pages)
+Disallow: /*?                 # Block URLs with query strings (e.g., tracking parameters)
+Allow: /assets/images/         # Allow crawling of images for SEO
+Allow: /                       # Ensure all other pages are crawlable
 Sitemap: https://utilities4d.com/sitemap.xml
+Crawl-delay: 5                 # Moderate delay to prevent server overload
 
-# Disallow access to sensitive directories
-Disallow: /assets/
+# Specific rules for Googlebot
+User-agent: Googlebot
+Allow: /assets/images/
+Disallow: /search              # Block search result pages (if any)
+Disallow: /login               # Block login pages (if applicable)
+Disallow: /user/               # Block user-specific pages (if applicable)
+
+# Specific rules for Googlebot-Image
+User-agent: Googlebot-Image
+Allow: /assets/images/
+
+# Specific rules for Bingbot
+User-agent: Bingbot
+Allow: /assets/images/
 Disallow: /admin/
+Disallow: /assets/private/
 
-# Allow search engines to crawl the main content
-Allow: /index.html
-Allow: /thank-you.html
+# Specific rules for Yandex
+User-agent: Yandex
+Allow: /assets/images/
+Disallow: /admin/
+Disallow: /assets/private/
+Crawl-delay: 10                # Yandex may need a slightly higher delay due to aggressive crawling
 
-# Crawl-delay for politeness
-Crawl-delay: 10
+# Block bad bots and scrapers
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+# Allow clean URL parameters for tracking (optional, adjust as needed)
+Allow: /*?utm_source=
+Allow: /*?utm_medium=
+Allow: /*?utm_campaign=
+
+# Host directive (optional, for multi-region sites)
+# Host: https://utilities4d.com  # Uncomment and adjust if you have multiple mirrored sites
+
+# Custom crawl budget optimization (optional)
+User-agent: *
+Request-rate: 1/10           # 1 request every 10 seconds (fine-tune based on server capacity)
+
+# Clean-up parameters to avoid duplicate content
+Clean-param: utm_source /index.html
+Clean-param: utm_medium /index.html
+Clean-param: utm_campaign /index.html

@@ -12,18 +12,19 @@
   <meta property="og:url" content="https://utilities4d.com/" />
   <meta property="og:title" content="Utilities 4 Dragon - Speech Recognition Utilities and Tools" />
   <meta property="og:description" content="Enhance your Dragon speech recognition experience with our powerful utilities. Tools for dictation, speech command, and hands-free computing. Free trial available." />
-  <meta property="og:image" content="https://utilities4d.com/assets/images/hero-bg.webp" />
+  <meta property="og:image" content="https://utilities4d.com/assets/images/logo.webp" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:url" content="https://utilities4d.com/" />
   <meta name="twitter:title" content="Utilities 4 Dragon - Speech Recognition Utilities and Tools" />
   <meta name="twitter:description" content="Enhance your Dragon speech recognition experience with our powerful utilities. Tools for dictation, speech command, and hands-free computing. Free trial available." />
-  <meta name="twitter:image" content="https://utilities4d.com/assets/images/hero-bg.webp" />
+  <meta name="twitter:image" content="https://utilities4d.com/assets/images/logo.webp" />
   
   <link rel="icon" href="assets/images/favicon.jpg" type="image/jpg" />
   
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="canonical" href="https://utilities4d.com/" />
   
   <script src="https://cdn.tailwindcss.com"></script>
   
@@ -32,8 +33,32 @@
   <script src="./assets/js/cookie-consent.js"></script>
   
   <link rel="stylesheet" href="./assets/css/style.css" />
-  
-  <link rel="preload" as="image" href="./assets/images/hero-bg.webp" />
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Utilities 4 Dragon",
+      "url": "https://utilities4d.com/",
+      "logo": "https://utilities4d.com/assets/images/logo.webp",
+      "description": "Utilities 4 Dragon provides powerful tools and utilities to enhance your Dragon speech recognition experience, focusing on dictation, speech commands, and hands-free computing.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Pennsylvania",
+        "addressCountry": "United States"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "support@utilities4d.com",
+        "contactType": "Customer Support"
+      },
+      "sameAs": [
+        "https://twitter.com/util4dragon",
+        "https://facebook.com/util4dragon",
+        "https://linkedin.com/company/util4dragon"
+      ]
+    }
+    </script>
   
   <style>
     @keyframes fadeInUp {
@@ -185,78 +210,204 @@
     </section>
 
     <!-- Products Section -->
-    <section id="products" aria-labelledby="products-title" class="max-w-5xl mx-auto">
-      <h2 id="products-title" class="text-4xl font-bold mb-8 text-center">Our Products</h2>
-      <div class="grid md:grid-cols-3 gap-10">
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
-          <img src="assets/images/db_b1.webp" alt="Dictation Box screenshot" class="w-full h-48 object-cover" />
-          <div class="p-6">
-            <h3 class="text-xl font-semibold mb-2">Dictation Box</h3>
-            <p class="text-gray-700 mb-2">Price: <strong>$27.99</strong></p>
-            <p class="text-gray-700 mb-4">
-              Compose and edit text in a dedicated window before sending to any application. Supports rich text formatting, advanced clipboard integration, and Grammarly compatibility. Works with speech-friendly and non-speech-friendly apps.
-            </p>
-            <a href="./products/dictation.html" class="text-blue-600 hover:underline font-semibold">Learn More</a>
-            <a href="db/Dictation Box.pdf" class="text-blue-600 hover:underline font-semibold ml-4">View User Manual</a>
-          </div>
-        </div>
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
-          <img src="./assets/images/SC.webp" alt="Speech Commander interface" class="w-full h-48 object-cover" />
-          <div class="p-6">
-            <h3 class="text-xl font-semibold mb-2">Speech Commander</h3>
-            <p class="text-gray-700 mb-2">Price: <strong>$19.99</strong></p>
-            <p class="text-gray-700 mb-4">
-              Create and customize voice commands to automate your workflow and control your PC hands-free. Compatible with multiple applications.
-            </p>
-            <a href="./products/speech.html" class="text-blue-600 hover:underline font-semibold">Learn More</a>
-          </div>
-        </div>
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
-          <img src="./assets/images/glider.webp" alt="Glide navigation interface" class="w-full h-48 object-cover" />
-          <div class="p-6">
-            <h3 class="text-xl font-semibold mb-2">Glide</h3>
-            <p class="text-gray-700 mb-2">Price: <strong>$15.00</strong></p>
-            <p class="text-gray-700 mb-4">
-              Voice-driven navigation system for faster control of your PC without a mouse or keyboard. Scroll any application with three adjustable speeds and dynamic control.
-            </p>
-            <a href="./products/glide.html" class="text-blue-600 hover:underline font-semibold">Learn More</a>
-          </div>
-        </div>
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
-          <img src="./assets/images/grid.webp" alt="Grid navigation interface" class="w-full h-48 object-cover" />
-          <div class="p-6">
-            <h3 class="text-xl font-semibold mb-2">Grid</h3>
-            <p class="text-gray-700 mb-2">Price: <strong>$12.99</strong></p>
-            <p class="text-gray-700 mb-4">
-              Navigate interfaces with a grid-based overlay. Precise cursor control via voice, ideal for complex applications.
-            </p>
-            <a href="./products/grid.html" class="text-blue-600 hover:underline font-semibold">Learn More</a>
-          </div>
-        </div>
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
-          <img src="./assets/images/calculator.webp" alt="Calculator interface" class="w-full h-48 object-cover" />
-          <div class="p-6">
-            <h3 class="text-xl font-semibold mb-2">Calculator</h3>
-            <p class="text-gray-700 mb-2">Price: <strong>$9.99</strong></p>
-            <p class="text-gray-700 mb-4">
-              Perform calculations using voice commands. Supports basic and scientific operations, integrates with Dragon for seamless use.
-            </p>
-            <a href="./products/calculator.html" class="text-blue-600 hover:underline font-semibold">Learn More</a>
-          </div>
-        </div>
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
-          <img src="./assets/images/plates.webp" alt="Plates interface" class="w-full h-48 object-cover" />
-          <div class="p-6">
-            <h3 class="text-xl font-semibold mb-2">Plates</h3>
-            <p class="text-gray-700 mb-2">Price: <strong>$14.99</strong></p>
-            <p class="text-gray-700 mb-4">
-              Create and manage voice-activated templates. Streamline repetitive tasks with customizable macros for various applications.
-            </p>
-            <a href="./products/plates.html" class="text-blue-600 hover:underline font-semibold">Learn More</a>
-          </div>
-        </div>
+<section id="products" aria-labelledby="products-title" class="max-w-5xl mx-auto">
+  <h2 id="products-title" class="text-4xl font-bold mb-8 text-center">Our Products</h2>
+  <div class="grid md:grid-cols-3 gap-10">
+    <!-- Dictation Box -->
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+      <img src="assets/images/db_b1.webp" alt="Screenshot of Dictation Box utility interface for Dragon speech recognition" class="w-full h-48 object-cover" />
+      <div class="p-6">
+        <h3 class="text-xl font-semibold mb-2">Dictation Box</h3>
+        <p class="text-gray-700 mb-2">Price: <strong>$27.99</strong></p>
+        <p class="text-gray-700 mb-4">
+          Compose and edit text in a dedicated window before sending to any application. Supports rich text formatting, advanced clipboard integration, and Grammarly compatibility. Works with speech-friendly and non-speech-friendly apps. Try it free for 30 days.
+        </p>
+        <a href="./products/dictation.html" class="text-blue-600 hover:underline font-semibold">Explore now</a>
+        <a href="db/Dictation Box.pdf" class="text-blue-600 hover:underline font-semibold ml-4">View User Manual</a>
       </div>
-    </section>
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Dictation Box",
+        "description": "Compose and edit text in a dedicated window before sending to any application. Supports rich text formatting, advanced clipboard integration, and Grammarly compatibility. Works with speech-friendly and non-speech-friendly apps. Try it free for 30 days.",
+        "image": "https://utilities4d.com/assets/images/db_b1.webp",
+        "brand": {
+          "@type": "Brand",
+          "name": "Utilities 4 Dragon"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "27.99",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://utilities4d.com/products/dictation.html"
+        }
+      }
+      </script>
+    </div>
+    <!-- Speech Commander -->
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+      <img src="./assets/images/SC.webp" alt="Speech Commander interface for Dragon speech recognition automation" class="w-full h-48 object-cover" />
+      <div class="p-6">
+        <h3 class="text-xl font-semibold mb-2">Speech Commander</h3>
+        <p class="text-gray-700 mb-2">Price: <strong>$19.99</strong></p>
+        <p class="text-gray-700 mb-4">
+          Create and customize voice commands to automate your workflow and control your PC hands-free. Compatible with multiple applications. Try it free for 30 days.
+        </p>
+        <a href="./products/speech.html" class="text-blue-600 hover:underline font-semibold">Explore now</a>
+      </div>
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Speech Commander",
+        "description": "Create and customize voice commands to automate your workflow and control your PC hands-free. Compatible with multiple applications. Try it free for 30 days.",
+        "image": "https://utilities4d.com/assets/images/SC.webp",
+        "brand": {
+          "@type": "Brand",
+          "name": "Utilities 4 Dragon"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "19.99",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://utilities4d.com/products/speech.html"
+        }
+      }
+      </script>
+    </div>
+    <!-- Glide -->
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+      <img src="./assets/images/glider.webp" alt="Glide navigation interface for voice-driven PC control" class="w-full h-48 object-cover" />
+      <div class="p-6">
+        <h3 class="text-xl font-semibold mb-2">Glide</h3>
+        <p class="text-gray-700 mb-2">Price: <strong>$15.00</strong></p>
+        <p class="text-gray-700 mb-4">
+          Voice-driven navigation system for faster control of your PC without a mouse or keyboard. Scroll any application with three adjustable speeds and dynamic control. Try it free for 30 days.
+        </p>
+        <a href="./products/glide.html" class="text-blue-600 hover:underline font-semibold">Explore now</a>
+      </div>
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Glide",
+        "description": "Voice-driven navigation system for faster control of your PC without a mouse or keyboard. Scroll any application with three adjustable speeds and dynamic control. Try it free for 30 days.",
+        "image": "https://utilities4d.com/assets/images/glider.webp",
+        "brand": {
+          "@type": "Brand",
+          "name": "Utilities 4 Dragon"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "15.00",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://utilities4d.com/products/glide.html"
+        }
+      }
+      </script>
+    </div>
+    <!-- Grid -->
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+      <img src="./assets/images/grid.webp" alt="Grid navigation interface for precise voice cursor control" class="w-full h-48 object-cover" />
+      <div class="p-6">
+        <h3 class="text-xl font-semibold mb-2">Grid</h3>
+        <p class="text-gray-700 mb-2">Price: <strong>$12.99</strong></p>
+        <p class="text-gray-700 mb-4">
+          Navigate interfaces with a grid-based overlay. Precise cursor control via voice, ideal for complex applications. Try it free for 30 days.
+        </p>
+        <a href="./products/grid.html" class="text-blue-600 hover:underline font-semibold">Explore now</a>
+      </div>
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Grid",
+        "description": "Navigate interfaces with a grid-based overlay. Precise cursor control via voice, ideal for complex applications. Try it free for 30 days.",
+        "image": "https://utilities4d.com/assets/images/grid.webp",
+        "brand": {
+          "@type": "Brand",
+          "name": "Utilities 4 Dragon"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "12.99",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://utilities4d.com/products/grid.html"
+        }
+      }
+      </script>
+    </div>
+    <!-- Calculator -->
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+      <img src="./assets/images/calculator.webp" alt="Calculator interface for voice-activated calculations" class="w-full h-48 object-cover" />
+      <div class="p-6">
+        <h3 class="text-xl font-semibold mb-2">Calculator</h3>
+        <p class="text-gray-700 mb-2">Price: <strong>$9.99</strong></p>
+        <p class="text-gray-700 mb-4">
+          Perform calculations using voice commands. Supports basic and scientific operations, integrates with Dragon for seamless use. Try it free for 30 days.
+        </p>
+        <a href="./products/calculator.html" class="text-blue-600 hover:underline font-semibold">Explore now</a>
+      </div>
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Calculator",
+        "description": "Perform calculations using voice commands. Supports basic and scientific operations, integrates with Dragon for seamless use. Try it free for 30 days.",
+        "image": "https://utilities4d.com/assets/images/calculator.webp",
+        "brand": {
+          "@type": "Brand",
+          "name": "Utilities 4 Dragon"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "9.99",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://utilities4d.com/products/calculator.html"
+        }
+      }
+      </script>
+    </div>
+    <!-- Plates -->
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+      <img src="./assets/images/plates.webp" alt="Plates interface for voice-activated templates and macros" class="w-full h-48 object-cover" />
+      <div class="p-6">
+        <h3 class="text-xl font-semibold mb-2">Plates</h3>
+        <p class="text-gray-700 mb-2">Price: <strong>$14.99</strong></p>
+        <p class="text-gray-700 mb-4">
+          Create and manage voice-activated templates. Streamline repetitive tasks with customizable macros for various applications. Try it free for 30 days.
+        </p>
+        <a href="./products/plates.html" class="text-blue-600 hover:underline font-semibold">Explore now</a>
+      </div>
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Plates",
+        "description": "Create and manage voice-activated templates. Streamline repetitive tasks with customizable macros for various applications. Try it free for 30 days.",
+        "image": "https://utilities4d.com/assets/images/plates.webp",
+        "brand": {
+          "@type": "Brand",
+          "name": "Utilities 4 Dragon"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "14.99",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://utilities4d.com/products/plates.html"
+        }
+      }
+      </script>
+    </div>
+  </div>
+</section>
 
     <!-- Videos Section -->
     <section id="videos" aria-labelledby="videos-title" class="max-w-5xl mx-auto">
@@ -416,7 +567,7 @@
         </div>
       </div>
     </div>
-    <div class="text-center mt-10 text-gray-500 text-sm select-none">
+    <div class="text-center mt-10 text-gray-400 text-sm select-none">
       © 2025 Utilities 4 Dragon. All rights reserved.
     </div>
   </footer>

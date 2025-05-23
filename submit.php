@@ -1,5 +1,4 @@
 <?php
-// filepath: /g:/U4D/_Web/Utilities4D/U4D/subscribe.php
 
 // Secure email subscription handler
 session_start();
@@ -64,4 +63,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" &&
     header('Location: index.html?error=security');
     exit();
 }
-?>
