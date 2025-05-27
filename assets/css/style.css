@@ -11,6 +11,10 @@ section {
   width: 70px;
 }
 
+.logo-image2{
+  width: 120px;
+}
+
 img, video {
   max-width: 100%;
   height: auto;
