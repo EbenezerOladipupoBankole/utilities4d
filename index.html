@@ -8,7 +8,7 @@
   <meta name="keywords" content="dragon naturallyspeaking, speech recognition, utilities, accessibility, dictation, speech command, hands-free computing, productivity, efficiency" />
   
   <!-- Open Graph & Twitter meta tags -->
-  <meta property="og:type" content="website" />
+  <meta property="og:type"content="website" />
   <meta property="og:url" content="https://utilities4d.com/" />
   <meta property="og:title" content="Utilities 4 Dragon - Speech Recognition Utilities and Tools" />
   <meta property="og:description" content="Enhance your Dragon speech recognition experience with our powerful utilities. Tools for dictation, speech command, and hands-free computing. Free trial available." />
@@ -571,6 +571,11 @@
       © 2025 Utilities 4 Dragon. All rights reserved.
     </div>
   </footer>
+  
+   <!-- Scroll to Top Button -->
+   <button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top" class="hidden fixed bottom-5 right-5 bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center shadow-lg hover:bg-blue-700 transition">
+    ↑
+  </button>
 
   <!-- Scripts -->
   <script>
@@ -593,6 +598,21 @@
       document.getElementById("cpuInfo").innerText = cpuInfo;
     }
     window.onload = getCPUInfo;
+
+    // Scroll to Top Button Functionality
+    const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+    window.onscroll = function () {
+      if (document.documentElement.scrollTop > 100) {
+        scrollTopBtn.classList.remove("hidden");
+      } else {
+        scrollTopBtn.classList.add("hidden");
+      }
+    };
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
   </script>
 </body>
 </html>
