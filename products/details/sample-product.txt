@@ -1,0 +1,12 @@
+title: Dictations Box
+slug: dictations
+price: $27.99
+image: ../assets/images/db_b1.webp
+description: Dictation Box is a powerful tool from Utilities 4 Dragon designed to streamline your text composition and editing process using voice commands. Whether you’re drafting emails, writing reports, or editing documents, this tool provides a dedicated window to compose text before seamlessly sending it to any application—speech-friendly or not.
+key_features:
+- Rich Text Formatting: Apply bold, italics, and bullet points directly with voice commands.
+- Advanced Clipboard Integration: Copy and paste text across applications with ease.
+- Grammarly Compatibility: Enhance your writing with real-time grammar and style suggestions.
+- Cross-App Support: Works with non-speech-friendly apps like legacy software or niche tools.
+benefits:
+- Dictation Box saves time by allowing you to dictate and edit in one place, reducing errors and improving workflow efficiency. It’s ideal for professionals who rely on Dragon speech recognition and need flexibility across various software environments.

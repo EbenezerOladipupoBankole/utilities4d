@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Dictation Box - Utilities 4 Dragon</title>
-  <meta name="description" content="Dictation Box is a powerful tool from Utilities 4 Dragon designed to streamline your text composition and editing process using voice commands. Whether you’re drafting emails, writing reports, or editing documents, this tool provides a dedicated window to compose text before seamlessly sending it to any application—speech-friendly or not." />
-  <meta name="keywords" content="dragon naturallyspeaking, speech recognition, utilities, accessibility, dictation, speech command, hands-free computing, productivity, efficiency, Dictation Box, Utilities 4 Dragon, speech recognition, text editing" />
+  <title>{{title}} - Utilities 4 Dragon</title>
+  <meta name="description" content="{{description}}" />
+  <meta name="keywords" content="dragon naturallyspeaking, speech recognition, utilities, accessibility, dictation, speech command, hands-free computing, productivity, efficiency, {{title}}, Utilities 4 Dragon, speech recognition, text editing" />
   
   <!-- Open Graph & Twitter meta tags -->
   <meta property="og:type" content="website" />
@@ -24,7 +24,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link rel="canonical" href="https://utilities4d.com/products/dictation.html" />
+  <link rel="canonical" href="https://utilities4d.com/products/{{slug}}.html" />
   
   <script src="https://cdn.tailwindcss.com"></script>
   
@@ -114,20 +114,17 @@
 
   <main class="pt-28 pb-16">
     <section class="fade-in max-w-4xl mx-auto px-6">
-      <h1 class="text-4xl font-bold mb-6 text-gray-900">Dictation Box</h1>
-      <p class="text-gray-700 mb-8">Price: $27.99</p>
-      <img src="../assets/images/db_b1.webp" alt="Dictation Box screenshot" class="w-full h-64 object-cover rounded-lg mb-6">
+      <h1 class="text-4xl font-bold mb-6 text-gray-900">{{title}}</h1>
+      <p class="text-gray-700 mb-8">Price: {{price}}</p>
+      <img src="{{image}}" alt="{{title}} screenshot" class="w-full h-64 object-cover rounded-lg mb-6">
       <div class="prose prose-lg text-gray-700 mb-12">
-        <p>Dictation Box is a powerful tool from Utilities 4 Dragon designed to streamline your text composition and editing process using voice commands. Whether you’re drafting emails, writing reports, or editing documents, this tool provides a dedicated window to compose text before seamlessly sending it to any application—speech-friendly or not.</p>
+        <p>{{description}}</p>
         <h2 class="text-2xl font-semibold mt-8 mb-4">Key Features</h2>
         <ul class="list-disc pl-6 mb-6">
-          <li>Rich Text Formatting: Apply bold, italics, and bullet points directly with voice commands.</li>
-          <li>Advanced Clipboard Integration: Copy and paste text across applications with ease.</li>
-          <li>Grammarly Compatibility: Enhance your writing with real-time grammar and style suggestions.</li>
-          <li>Cross-App Support: Works with non-speech-friendly apps like legacy software or niche tools.</li>
+          {{key_features}}
         </ul>
         <h2 class="text-2xl font-semibold mt-8 mb-4">Benefits</h2>
-        <p></p>
+        <ul class="list-disc pl-6 mb-6">{{benefits}}</ul>
         <h2 class="text-2xl font-semibold mt-8 mb-4">System Requirements</h2>
         <ul class="list-disc pl-6 mb-6">
           <li>Windows 10 or later</li>
@@ -136,7 +133,7 @@
           <li>40MB free disk space</li>
         </ul>
         <h2 class="text-2xl font-semibold mt-8 mb-4">Get Started</h2>
-        <p>Streamline your tasks with a 30-day free trial. Purchase securely via PayPal to unlock Dictation Box full features.</p>
+        <p>Streamline your tasks with a 30-day free trial. Purchase securely via PayPal to unlock {{title}} full features.</p>
         <div class="flex justify-center mt-6">
           <a href="../index.html#purchases" class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition font-semibold focus:outline-none focus:ring-2 focus:ring-blue-500">Get Started Now</a>
         </div>
