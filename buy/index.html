@@ -50,35 +50,36 @@
     </script>
 </head>
 <body class="bg-white text-gray-800 font-sans leading-relaxed">
-  <header class="bg-gray-900 text-white shadow sticky top-0 z-50">
-    <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+  <!-- Header Navigation -->
+<header class="fixed top-0 left-0 w-full bg-gray-900 text-white z-[100] shadow-md">
+  <div class="container mx-auto px-4 py-4 flex items-center justify-between relative">
       <a href="../index.html" class="w-50" aria-label="Utilities 4 Dragon Homepage"><img src="../assets/images/logo.webp" alt="Utilities 4 Dragon logo" class="logo-image"/></a>
-      <nav class="hidden md:flex space-x-6">
-        <a href="../index.html" class="hover:text-blue-400">Home</a>
-        <a href="../index.html#services" class="hover:text-blue-400">Services</a>
-        <a href="../index.html#about" class="hover:text-blue-400">About</a>
-        <a href="../index.html#products" class="hover:text-blue-400">Products</a>
-        <a href="../index.html#videos" class="hover:text-blue-400">Videos</a>
-        <a href="../index.html#installation" class="hover:text-blue-400">Installation</a>
-        <a href="../index.html#services#contact" class="hover:text-blue-400">Contact</a>
-      </nav>
-      <!-- <a href="/buy" class="hidden md:block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Buy Now</a>
-      <button id="menu-toggle" class="md:hidden text-2xl">
+    <nav class="hidden md:flex space-x-6 relative z-[110]" role="navigation" aria-label="Primary navigation">
+      <a href="../index.html#home" class="hover:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded">Home</a>
+      <a href="../index.html#services" class="hover:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded">Services</a>
+      <a href="../index.html#about" class="hover:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded">About</a>
+      <a href="../index.html#products" class="hover:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded">Products</a>
+      <a href="../index.html#videos" class="hover:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded">Videos</a>
+      <a href="../index.html#installations" class="hover:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded">Installation</a>
+      <a href="../index.html#contact" class="hover:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded">Contact</a>
+    </nav>
+    <a href="../buy/index.html" class="hidden md:inline-block bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition relative z-[110]">Buy Now</a>
+    <button id="menu-toggle" class="md:hidden text-3xl focus:outline-none focus:ring-2 focus:ring-blue-500 relative z-[110]" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
         <ion-icon name="menu-outline"></ion-icon>
-      </button> -->
-    </div>
-    <div id="mobile-menu" class="hidden md:hidden bg-gray-900 text-white absolute top-16 left-0 w-full">
-      <nav class="flex flex-col space-y-4 p-4">
-        <a href="../index.html" class="hover:text-blue-400">Home</a>
-        <a href="../index.html#services" class="hover:text-blue-400">Services</a>
-        <a href="../index.html#about" class="hover:text-blue-400">About</a>
-        <a href="../index.html#products" class="hover:text-blue-400">Products</a>
-        <a href="../index.html#videos" class="hover:text-blue-400">Videos</a>
-        <a href="../index.html#installation" class="hover:text-blue-400">Installation</a>
-        <a href="../index.html#contact" class="hover:text-blue-400">Contact</a>
-        <!-- <a href="/buy" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 text-center">Buy Now</a> -->
-      </nav>
-    </div>
+    </button>
+  </div>
+  <nav id="mobile-menu" class="hidden md:hidden bg-gray-900 text-white absolute top-full left-0 w-full shadow-lg z-[90]" aria-label="Mobile navigation">
+    <ul class="flex flex-col space-y-4 p-6">
+      <li><a href="../index.html#home" class="hover:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded block">Home</a></li>
+      <li><a href="../index.html#services" class="hover:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded block">Services</a></li>
+      <li><a href="../index.html#about" class="hover:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded block">About</a></li>
+      <li><a href="../index.html#products" class="hover:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded block">Products</a></li>
+      <li><a href="../index.html#videos" class="hover:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded block">Videos</a></li>
+      <li><a href="../index.html#installations" class="hover:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded block">Installation</a></li>
+      <li><a href="../index.html#contact" class="hover:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded block">Contact</a></li>
+      <li><a href="../buy/index.html" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 text-center block focus:outline-none focus:ring-2 focus:ring-blue-500">Buy Now</a></li>
+    </ul>
+  </nav>
   </header>
 
   <section id="purchases" aria-labelledby="purchases-title" class="py-24 bg-gray-50 fade-in">
@@ -283,12 +284,17 @@
 
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <!-- Scripts -->
   <script>
     const menuToggle = document.getElementById('menu-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
-    menuToggle.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
+    if (menuToggle && mobileMenu) {
+      menuToggle.addEventListener('click', () => {
+        const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+        menuToggle.setAttribute('aria-expanded', String(!isExpanded));
+        mobileMenu.classList.toggle('hidden');
+      });
+    }
   </script>
 </body>
 </html>

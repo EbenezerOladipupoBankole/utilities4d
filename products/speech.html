@@ -81,10 +81,11 @@
 </head>
 <body class="font-sans text-gray-900 bg-white scroll-smooth">
   <!-- Header -->
-  <header class="fixed top-0 left-0 w-full bg-gray-900 text-white z-50 shadow-md">
-    <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+  <!-- Header Navigation -->
+<header class="fixed top-0 left-0 w-full bg-gray-900 text-white z-[100] shadow-md">
+  <div class="container mx-auto px-4 py-4 flex items-center justify-between relative">
       <a href="../index.html" class="w-50" aria-label="Utilities 4 Dragon Homepage"><img src="../assets/images/logo.webp" alt="Utilities 4 Dragon logo" class="logo-image"/></a>
-      <nav class="hidden md:flex space-x-6" role="navigation" aria-label="Primary navigation">
+    <nav class="hidden md:flex space-x-6 relative z-[110]" role="navigation" aria-label="Primary navigation">
         <a href="../index.html#home" class="hover:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded">Home</a>
         <a href="../index.html#services" class="hover:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded">Services</a>
         <a href="../index.html#about" class="hover:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded">About</a>
@@ -93,12 +94,12 @@
         <a href="../index.html#installations" class="hover:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded">Installation</a>
         <a href="../index.html#contact" class="hover:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded">Contact</a>
       </nav>
-      <a href="../buy/index.html" class="hidden md:inline-block bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition">Buy Now</a>
-      <button id="menu-toggle" class="md:hidden text-3xl focus:outline-none focus:ring-2 focus:ring-blue-500" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+    <a href="../buy/index.html" class="hidden md:inline-block bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition relative z-[110]">Buy Now</a>
+    <button id="menu-toggle" class="md:hidden text-3xl focus:outline-none focus:ring-2 focus:ring-blue-500 relative z-[110]" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
         <ion-icon name="menu-outline"></ion-icon>
       </button>
-    </div>
-    <nav id="mobile-menu" class="hidden md:hidden bg-gray-900 text-white absolute top-full left-0 w-full shadow-lg" aria-label="Mobile navigation">
+  </div>
+  <nav id="mobile-menu" class="hidden md:hidden bg-gray-900 text-white absolute top-full left-0 w-full shadow-lg z-[90]" aria-label="Mobile navigation">
       <ul class="flex flex-col space-y-4 p-6">
         <li><a href="../index.html#home" class="hover:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded block">Home</a></li>
         <li><a href="../index.html#services" class="hover:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded block">Services</a></li>

@@ -25,8 +25,9 @@ a, button {
   transition: all 0.3s ease;
 }
 
-
-.bg-white:hover {
+/* Apply hover effect only to specific cards, not the whole body */
+.animate-fade-in-up.bg-white:hover, 
+.bg-white.rounded-xl:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
@@ -153,4 +154,3 @@ button:hover, a.btn:hover {
     justify-content: space-between;
   }
 }
-
