@@ -1,12 +1,20 @@
-title: Dictations Box
-slug: dictations
-price: $27.99
-image: ../assets/images/db_b1.webp
-description: Dictation Box is a powerful tool from Utilities 4 Dragon designed to streamline your text composition and editing process using voice commands. Whether you’re drafting emails, writing reports, or editing documents, this tool provides a dedicated window to compose text before seamlessly sending it to any application—speech-friendly or not.
+title: Cache Manager
+slug: cache-manager
+order: 3
+price: free
+image: ../assets/images/cache_b1.webp
+description: Cache Manager can clear cache(configuration) files created by any of our applications..
 key_features:
-- Rich Text Formatting: Apply bold, italics, and bullet points directly with voice commands.
-- Advanced Clipboard Integration: Copy and paste text across applications with ease.
-- Grammarly Compatibility: Enhance your writing with real-time grammar and style suggestions.
-- Cross-App Support: Works with non-speech-friendly apps like legacy software or niche tools.
+- Windows 10 or later
+- Dragon NaturallySpeaking 12 or higher
+- 2GB RAM minimum, 4GB recommended
+- 50MB free disk space
 benefits:
-- Dictation Box saves time by allowing you to dictate and edit in one place, reducing errors and improving workflow efficiency. It’s ideal for professionals who rely on Dragon speech recognition and need flexibility across various software environments.
+Cache Manager, a free utility from Utilities 4 Dragon, allows you to easily remove configuration files created by various applications. These configuration files are temporary files that store various settings. A variety of circumstances may dictate that these files be reset. Although rarely needed, the program allows you to select which cache files to delete. These configuration files are re-created automatically the next time you run the given program.
+- locations supported: Can be used with the old Speech Productivity applications as well as the new Utilities 4 Dragon applications.
+- Configuration File Visibility: You can see what any stored setting is set to.
+- You Can Delete One Or More Files : You can select which cache files to delete. Easily delete one or all files as needed
+system_requirements:
+- Windows 10 or later
+- Dragon NaturallySpeaking 12 or higher
+- 15MB free disk space

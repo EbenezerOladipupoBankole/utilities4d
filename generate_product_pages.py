@@ -98,11 +98,11 @@ def update_products_js(products):
     # Track URLs of existing products
     existing_urls = {p.get("url") for p in existing_products if p.get("url")}
     print(f"Existing URLs: {existing_urls}")
-    
+
     # Process each new product from .txt files
     for new_prod in products:
         new_url = new_prod["url"]
-        print(f"Processing new product: {new_prod.get('name', 'Unknown')} at {new_url}")
+        print(f"Processing product from file: {new_prod.get('name', 'Unknown')} at {new_url}")
         
         if new_url in existing_urls:
             # Update existing product
@@ -112,12 +112,12 @@ def update_products_js(products):
                     merged_prod = existing_prod.copy()
                     merged_prod.update(new_prod)
                     updated_products[i] = merged_prod
-                    print(f"Updated existing product: {merged_prod.get('name', 'Unknown')}")
+                    print(f"  -> Updated existing product: {merged_prod.get('name', 'Unknown')}")
                     break
         else:
             # Add new product
             updated_products.append(new_prod)
-            print(f"Added new product: {new_prod.get('name', 'Unknown')}")
+            print(f"  -> Added new product: {new_prod.get('name', 'Unknown')}")
 
     print(f"Final products count: {len(updated_products)}")
 
