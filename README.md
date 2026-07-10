@@ -1,10 +1,10 @@
 # Utilities 4 Dragon
 
-Utilities 4 Dragon is a static website and product marketing site for speech-recognition utilities designed to improve the Dragon workflow. The project combines a polished landing page, product detail pages, supporting content pages, and a simple contact/submission flow.
+Utilities 4 Dragon is a modern web application and product marketing site for speech-recognition utilities designed to improve the Dragon workflow. The project combines a polished landing page, product detail pages, supporting content pages, and interactive front-end features powered by JavaScript.
 
 ## Overview
 
-This repository contains the front-end website for Utilities 4 Dragon, including:
+This repository contains the web application for Utilities 4 Dragon, including:
 
 - A responsive marketing homepage
 - Product cards and individual product pages
@@ -30,7 +30,7 @@ This repository contains the front-end website for Utilities 4 Dragon, including
 - [buy/](buy/) — purchase-related page
 - [legal/](legal/) and [privacy/](privacy/) — legal pages
 - [generate_product_pages.py](generate_product_pages.py) — generates product pages from the text files in [products/details/](products/details/)
-- [submit.php](submit.php) — simple PHP form handler
+- [submit.php](submit.php) — form-related backend endpoint file
 
 ## Technology stack
 
@@ -39,17 +39,13 @@ This repository contains the front-end website for Utilities 4 Dragon, including
 - JavaScript
 - Tailwind CSS (loaded via CDN)
 - Python 3 for generating product pages
-- PHP for form submission handling
+- JavaScript for interactive UI behavior
 
 ## Getting started
 
-### Option 1: Open directly in a browser
+### Option 1: Run locally with a web server
 
-You can view the site locally by opening [index.html](index.html) in a browser.
-
-### Option 2: Run a local web server
-
-For a more reliable local preview, use a simple static server:
+For local development, run a simple server from the project root:
 
 ```bash
 python -m http.server 8000
@@ -60,6 +56,14 @@ Then open:
 ```text
 http://localhost:8000
 ```
+
+### Option 2: Deploy or preview with GitHub
+
+The project can be hosted from GitHub Pages or a similar static hosting platform for front-end preview and deployment.
+
+### Option 3: Production deployment
+
+For production, deploy the site to a host that supports your JavaScript-based front end and any related server-side integrations.
 
 ## Regenerating product pages
 
@@ -73,17 +77,14 @@ This will update the HTML files in [products/](products/) and refresh the produc
 
 ## Deployment
 
-Because this is a static website, it can be hosted on any standard web host or static hosting provider such as:
+The live site is hosted at https://www.utilities4d.org/.
 
-- GitHub Pages
-- Netlify
-- Vercel
-- Any shared hosting service with support for PHP files
+This project can be deployed on GitHub or any hosting provider that supports a JavaScript-driven web application.
 
 ## Notes
 
-- The site is designed as a marketing and content website rather than a full application.
-- Some form-related functionality depends on PHP being available on the hosting environment.
+- The site is designed as a modern web application with marketing, content, and interactive front-end features.
+- Any additional server-side behavior should be supported by the hosting environment.
 
 ## License
 
